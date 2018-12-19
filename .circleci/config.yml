@@ -35,9 +35,9 @@ jobs:
 
       - run: yarn generate
       - persist_to_workspace:
-        root: ~/aws-rough
-        paths:
-          - dist
+          root: ~/aws-rough
+          paths:
+            - dist
   deploy:
     docker:
       - image: circleci/python:3.6-jessie
@@ -46,8 +46,8 @@ jobs:
       - attach_workspace:
         at: ~/aws-rough
       - run: sudo pip install awscli
-      - run:  aws s3 sync ./dist/ s3://aws.noplan.cc --exact-timestamps --delete --exclude "*" --include "*.html" --cache-control no-store
-      - run: aws s3 sync ./dist/ s3://aws.noplan.cc --exact-timestamps --delete --exclude "*" --include "*.js" --cache-control max-age=31536000
+      - run:  aws s3 sync ./dist/ s3://aws.yko.tech --exact-timestamps --delete --exclude "*" --include "*.html" --cache-control no-store
+      - run: aws s3 sync ./dist/ s3://aws.yko.tech --exact-timestamps --delete --exclude "*" --include "*.js" --cache-control max-age=31536000
 
 workflows:
   version: 2
