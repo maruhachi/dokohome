@@ -2,6 +2,9 @@
 
 > find your home base.
 
+### Build status
+[![CircleCI](https://circleci.com/gh/maruhachi/dokohome.svg?style=svg)](https://circleci.com/gh/maruhachi/dokohome)
+
 ## Build Setup
 
 ``` bash
