@@ -13,9 +13,8 @@
     "precommit": "npm run lint"
   },
   "dependencies": {
-    "leaflet": "^1.5.1",
     "nuxt": "^2.0.0",
-    "nuxt-leaflet": "0.0.19"
+    "vue2-google-maps": "^0.10.7"
   },
   "devDependencies": {
     "@fortawesome/fontawesome-free": "^5.7.1",
