@@ -2,6 +2,8 @@
 
 > find your home base.
 
+[Site page](http://aws.yko.tech)
+
 ### Build status
 [![CircleCI](https://circleci.com/gh/maruhachi/dokohome.svg?style=svg)](https://circleci.com/gh/maruhachi/dokohome)
 

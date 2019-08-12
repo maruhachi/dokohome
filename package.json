@@ -13,9 +13,12 @@
     "precommit": "npm run lint"
   },
   "dependencies": {
-    "nuxt": "^2.0.0"
+    "leaflet": "^1.5.1",
+    "nuxt": "^2.0.0",
+    "nuxt-leaflet": "0.0.19"
   },
   "devDependencies": {
+    "@fortawesome/fontawesome-free": "^5.7.1",
     "babel-eslint": "^8.2.1",
     "eslint": "^4.15.0",
     "eslint-friendly-formatter": "^3.0.0",
