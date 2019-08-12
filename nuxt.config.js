@@ -13,8 +13,10 @@ module.exports = {
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
     ]
   },
+  plugins: [
+    {src:"~plugins/vue2-google-maps.js", ssr: true}
+  ],
   modules: [
-    'nuxt-leaflet'
   ],
   /*
   ** Customize the progress bar color
@@ -24,6 +26,7 @@ module.exports = {
   ** Build configuration
   */
   build: {
+    transpile: [/^vue2-google-maps($|\/)/],
     /*
     ** Run ESLint on save
     ** https://is.gd/TZZAbK
