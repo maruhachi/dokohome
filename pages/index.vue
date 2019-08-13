@@ -1,39 +1,33 @@
 <template>
   <section class="container">
-    <v-layout row justify-center align-center>
       <GmapMap
-        :center="{lat:10, lng:10}"
-        :zoom="7"
+        :center="{lat:38.26, lng:140.88 }"
+        :zoom="9"
         map-type-id="terrain"
-        style="width: 500px; height: 300px"
+        style="width: 100%; height: 100%"
       >
         <GmapMarker
           :key="index"
           v-for="(m, index) in markers"
-          :position="m.position"
+          :position="m.latLng"
           :clickable="true"
           :draggable="true"
           @click="center=m.position"
         />
       </GmapMap>
-    </v-layout>
   </section>
 </template>
 
 <script>
-import AppLogo from "~/components/AppLogo.vue";
-
 export default {
   data() {
     return {
       markers: [
-        { position: { lng: 10.2, lat: 10 } },
-        { position: { lng: 10.1, lat: 10 } }
-      ]
+        { latLng: { lat: 38.25, lng: 140.87 } }
+        , { latLng: { lat: 38.27, lng: 140.89 } }
+      ],
+      place: null,
     };
-  },
-  components: {
-    AppLogo
   }
 };
 </script>
@@ -46,6 +40,10 @@ export default {
   justify-content: center;
   align-items: center;
   text-align: center;
+}
+
+.vue-map-container {
+  position: static !important;
 }
 </style>
 

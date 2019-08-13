@@ -14,7 +14,7 @@ module.exports = {
     ]
   },
   plugins: [
-    {src:"~plugins/vue2-google-maps.js", ssr: true}
+    {src:"~/plugins/vue2-google-maps.js", ssr: true}
   ],
   modules: [
   ],
